@@ -1,30 +1,91 @@
-# New Chat
+**🚀 Skill-Sync – Gamified Career Guidance Platform 🎯**
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+Skill-Sync is an AI-powered gamified career guidance platform designed for Computer Science students. It helps users discover their ideal career path through fun, interactive quizzes, AI-driven skill gap analysis, personalized roadmaps, and real-time internship/hackathon recommendations – all while monitoring mental well-being and keeping the journey engaging.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/anikabisht44-6702s-projects/v0-new-chat-nn)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/VcKUsvRpbYB)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## Overview
+🎯 Problem Statement
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+An AI agent that helps students plan their future:
+Analyzes interests & strengths.
+Recommends career paths and skill-building courses.
+Tracks progress toward career goals.
+Bonus: Matches students with internship opportunities.
 
-## Deployment
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Your project is live at:
+💡Our Solution
+
+We are building an AI-powered gamified career guidance platform that personalizes learning paths for aspiring computer science professionals. By combining interactive quizzes, skill gap analysis, progress tracking, and mental wellness monitoring, the platform offers tailored roadmaps for SDE, AI/ML, and related roles. It recommends internships, hackathons, and resources based on a student’s unique strengths, ensuring both technical growth and emotional well-being.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+✨ Features
+
+1.Interest & Strength Analysis 🧠
+Assess students’ skills and preferences through quizzes and interactive modules.
+
+2.Career Path Recommendations 🎯
+Suggests suitable career options based on skills, interests, and personality.
+
+3.Skill Gap Analysis 🔍
+Highlights areas for improvement and provides curated courses, tutorials, and certifications.
+
+4.Progress Tracking & Roadmaps 📈
+Visualizes learning progress with timelines, milestones, and weekly challenges.
+
+5.Internship & Opportunity Matching 💼
+Matches students with internships, projects, and hackathons that fit their profile.
+
+6.Gamified Learning & Assessments 🎮
+Includes mini-projects, quizzes, and coding challenges to make learning interactive.
+
+7.GREWT – AI Career & Mental Health Chatbot 🤖💖
+Provides real-time guidance on career decisions, answers learning-related queries, and offers support for mental health and stress management to help students stay motivated and balanced.
+
+ 8.Progress & Rewards – Unlock achievements as you grow 🏆.
+
+ 9.Analytics Dashboard – Visual progress tracking for motivation.📊
+ 
+ -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+🛠 Tech Stack
+
+Frontend: React.js / Next.js (Gamified UI)
+
+Backend: Node.js / Express.js
+
+Database: MongoDB / PostgreSQL
+
+AI Integration: Gemini API (Career Analysis), Custom ML models
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+📂 Folder Structure
+gamified-career-analyzer/
+ ├── backend/
+ │    ├── routes/
+ │    ├── models/
+ │    ├── controllers/
+ │    └── server.js
+ ├── frontend/
+ │    ├── src/
+ │    ├── components/
+ │    ├── pages/
+ │    └── App.js
+ └── README.md
+ -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ 👥 Made my team Mind Mavericks
+
+Anika Bisht – Baackend Development
+Sanjana Gupta- UI/UX Design
+Deepesh– Frontend Development
+Saksham-AI integration
+
+
+Project is live at:
 
 **[https://vercel.com/anikabisht44-6702s-projects/v0-new-chat-nn](https://vercel.com/anikabisht44-6702s-projects/v0-new-chat-nn)**
 
-## Build your app
-
-Continue building your app on:
-
-**[https://v0.app/chat/projects/VcKUsvRpbYB](https://v0.app/chat/projects/VcKUsvRpbYB)**
-
-## How It Works
-
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
