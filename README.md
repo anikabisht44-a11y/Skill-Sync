@@ -80,8 +80,11 @@ gamified-career-analyzer/
  👥 Made my team Mind Mavericks
 
 Anika Bisht – Baackend Development
+
 Sanjana Gupta- UI/UX Design
+
 Deepesh– Frontend Development
+
 Saksham-AI integration
 
 
