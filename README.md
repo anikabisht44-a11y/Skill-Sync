@@ -4,8 +4,8 @@ Skill-Sync is an AI-powered gamified career guidance platform designed for Compu
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-🎯 Problem Statement
-
+**🎯 Problem Statement
+**
 An AI agent that helps students plan their future:
 Analyzes interests & strengths.
 Recommends career paths and skill-building courses.
@@ -14,13 +14,13 @@ Bonus: Matches students with internship opportunities.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-💡Our Solution
+**💡Our Solution**
 
 We are building an AI-powered gamified career guidance platform that personalizes learning paths for aspiring computer science professionals. By combining interactive quizzes, skill gap analysis, progress tracking, and mental wellness monitoring, the platform offers tailored roadmaps for SDE, AI/ML, and related roles. It recommends internships, hackathons, and resources based on a student’s unique strengths, ensuring both technical growth and emotional well-being.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-✨ Features
+**✨ Features**
 
 1.Interest & Strength Analysis 🧠
 Assess students’ skills and preferences through quizzes and interactive modules.
@@ -49,7 +49,7 @@ Provides real-time guidance on career decisions, answers learning-related querie
  
  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-🛠 Tech Stack
+**🛠 Tech Stack**
 
 Frontend: React.js / Next.js (Gamified UI)
 
@@ -77,7 +77,7 @@ gamified-career-analyzer/
  └── README.md
  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
- 👥 Made my team Mind Mavericks
+ 👥** Made my team Mind Mavericks**
 
 Anika Bisht – Baackend Development
 
