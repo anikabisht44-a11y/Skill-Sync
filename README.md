@@ -4,8 +4,8 @@ Skill-Sync is an AI-powered gamified career guidance platform designed for Compu
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-**🎯 Problem Statement
-**
+**🎯 Problem Statement**
+
 An AI agent that helps students plan their future:
 Analyzes interests & strengths.
 Recommends career paths and skill-building courses.
