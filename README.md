@@ -64,19 +64,31 @@ UI/UX-v0 / Figma
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-📂 Folder Structure
-gamified-career-analyzer/
- ├── backend/
- │    ├── routes/
- │    ├── models/
- │    ├── controllers/
- │    └── server.js
- ├── frontend/
- │    ├── src/
- │    ├── components/
- │    ├── pages/
- │    └── App.js
- └── README.md
+**📂 Folder Structure**
+
+skill-sync/
+├── 📂 app/ # Pages & API routes
+│ ├── api/ # API endpoints
+│ ├── globals.css # Global styles
+│ ├── layout.tsx # Root layout
+│ └── page.tsx # Main page
+│
+├── 📂 components/ # UI & features
+│ ├── ui/ # UI elements
+│ ├── grewt-chatbot.tsx# Grewt AI chatbot
+│ └── theme-provider.tsx
+│
+├── ⚙️ lib/ # Utility functions
+│ └── utils.ts
+│
+├── 🌍 public/ # Static assets
+├── 🎨 styles/ # Styles folder
+│
+├── 📦 package.json # Dependencies & scripts
+├── ⚡ next.config.mjs # Next.js config
+├── 🎨 tailwind.config.ts# Tailwind config
+└── 📝 tsconfig.json # TypeScript config
+
  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
  👥** Made my team Mind Mavericks**
