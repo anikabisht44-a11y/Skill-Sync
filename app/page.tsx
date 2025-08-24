@@ -661,7 +661,7 @@ export default function SkillSync() {
   const [cyberThreats, setCyberThreats] = useState<Array<{ threat: string; severity: string; identified: boolean }>>([])
   const [dataPattern, setDataPattern] = useState<number[]>([])
   const [webLayout, setWebLayout] = useState("")
-  const [careerChoices, setCareerChoices] = useState<Array<{ choice: string; outcome: string; selected: boolean }>>([])
+  const [careerChoices, setCareerChoices] = useState<Array<{ choice: string; outcome: string; selected: boolean; title: string; description?:string}>>([])
 
   // Health and wellness states
   const [currentHealthReminder, setCurrentHealthReminder] = useState<(typeof HEALTH_REMINDERS)[0] | null>(null)
@@ -739,10 +739,10 @@ export default function SkillSync() {
 
   const initializeCareerSim = () => {
     const choices = [
-      { choice: "Focus on frontend development", outcome: "High demand, creative work", selected: false },
-      { choice: "Specialize in cybersecurity", outcome: "Growing field, high salary", selected: false },
-      { choice: "Pursue data science", outcome: "Analytical work, AI integration", selected: false },
-      { choice: "Learn mobile development", outcome: "App market opportunities", selected: false },
+      { choice: "Focus on frontend development", outcome: "High demand, creative work", selected: false, title:"Front-End Devloper"},
+      { choice: "Specialize in cybersecurity", outcome: "Growing field, high salary", selected: false,title:"Cyber-Security Engineer" },
+      { choice: "Pursue data science", outcome: "Analytical work, AI integration", selected: false,title:"Data Sceintist" },
+      { choice: "Learn mobile development", outcome: "App market opportunities", selected: false,title:"Mobile Devloper" },
     ]
     setCareerChoices(choices)
   }
@@ -1537,6 +1537,8 @@ export default function SkillSync() {
                 onClick={() => {
                   const newChoices = careerChoices.map((c, i) => ({
                     ...c,
+                    title: c.title || "", // fallback
+                    description: c.description || "",
                     selected: i === index,
                   }))
                   setCareerChoices(newChoices)
@@ -1989,7 +1991,7 @@ export default function SkillSync() {
               </div>
             </div>
 
-            {/* Weekly Challenges & Projects */}
+            Weekly Challenges & Projects
             <div className="grid md:grid-cols-2 gap-6">
               {/* DSA Challenges */}
               <Card className="border-orange-200 bg-orange-50">
@@ -2006,12 +2008,13 @@ export default function SkillSync() {
 
                   <div className="space-y-3">
                     {[
-                      { title: "Two Sum Problem", difficulty: "Easy", completed: true },
-                      { title: "Reverse String", difficulty: "Easy", completed: true },
-                      { title: "Valid Parentheses", difficulty: "Easy", completed: false },
-                      { title: "Merge Arrays", difficulty: "Medium", completed: false },
-                      { title: "Binary Search", difficulty: "Medium", completed: false },
-                    ].map((challenge, index) => (
+                      { title: "Two Sum Problem", difficulty: "Easy", completed: true,url: "https://leetcode.com/problems/two-sum/description/" },
+                      { title: "Reverse String", difficulty: "Easy", completed: true,url: "https://leetcode.com/problems/reverse-string/description/" },
+                      { title: "Valid Parentheses", difficulty: "Easy", completed: false,url: "https://leetcode.com/problems/valid-parentheses/description/" },
+                      { title: "Merge Arrays", difficulty: "Medium", completed: false,url: "https://leetcode.com/problems/merge-sorted-array/description/" },
+                      { title: "Binary Search", difficulty: "Medium", completed: false,url: "https://leetcode.com/problems/binary-search/description/" },
+                    ].map((challenge, index,url) => (
+                      
                       <div key={index} className="flex items-center justify-between p-3 bg-white rounded-lg border">
                         <div className="flex items-center gap-3">
                           <div
@@ -2028,7 +2031,7 @@ export default function SkillSync() {
                             </Badge>
                           </div>
                         </div>
-                        <Button size="sm" variant={challenge.completed ? "outline" : "default"}>
+                        <Button onClick={() => window.open(challenge.url, "_blank")} size="sm" variant={challenge.completed ? "outline" : "default"}>
                           {challenge.completed ? "Review" : "Solve"}
                         </Button>
                       </div>
@@ -2066,19 +2069,29 @@ export default function SkillSync() {
                           </div>
                           <span className="text-sm text-gray-600">50%</span>
                         </div>
-                        <Button size="sm">Continue</Button>
+                        <a href="https://youtu.be/hkHHwA-vEyQ?si=NkLfICNakPrd-FHI" target="_blank" rel="noopener noreferrer">
+  <Button size="sm">Continue</Button>
+</a>
                       </div>
                     </div>
 
                     <div className="grid grid-cols-2 gap-3">
-                      {["Todo App", "Weather Widget", "Calculator", "Quiz Game"].map((project, index) => (
-                        <div key={index} className="p-3 bg-white rounded-lg border text-center">
-                          <p className="font-medium text-sm">{project}</p>
-                          <Badge variant="outline" className="text-xs mt-1">
-                            Week {index + 3}
-                          </Badge>
-                        </div>
-                      ))}
+                      {[
+  { name: "Todo App", url: "https://www.youtube.com/watch?v=3OqWCGVaOkA" },
+  { name: "Weather Widget", url: "https://www.youtube.com/watch?v=MIYQR-Ybrn4https://www.youtube.com/watch?v=MIYQR-Ybrn4" },
+  { name: "Calculator", url: "https://www.youtube.com/watch?v=cGgLHJGyS34" },
+  { name: "Quiz Game", url: "https://www.youtube.com/watch?app=desktop&v=zehwgTB0vV8" }
+].map((project, index) => (
+  <a key={index} href={project.url} target="_blank" rel="noopener noreferrer">
+    <div className="p-3 bg-white rounded-lg border text-center hover:bg-purple-50 transition">
+      <p className="font-medium text-sm">{project.name}</p>
+      <Badge variant="outline" className="text-xs mt-1">
+        Week {index + 3}
+      </Badge>
+    </div>
+  </a>
+))}
+
                     </div>
                   </div>
                 </CardContent>
@@ -2142,7 +2155,7 @@ export default function SkillSync() {
                       const fitScore = calculateFitScore(
                         internship,
                         gameScores.codeMatch > 0 ? ["JavaScript", "React", "Python"] : [],
-                      )
+                      );
 
                       return (
                         <>
