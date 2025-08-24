@@ -51,7 +51,7 @@ Provides real-time guidance on career decisions, answers learning-related querie
 
 **🛠 Tech Stack**
 
-Frontend: React.js / Next.js (Gamified UI)
+Frontend: HTML CSS / Typescript
 
 Backend: Node.js / Express.js
 
