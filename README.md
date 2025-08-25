@@ -1,4 +1,4 @@
-**🚀 Skill-Sync – Gamified Career Guidance Platform **
+🚀 **Skill-Sync – Gamified Career Guidance Platform **
 
 Skill-Sync is an AI-powered gamified career guidance platform designed for Computer Science students. It helps users discover their ideal career path through fun, interactive quizzes, AI-driven skill gap analysis, personalized roadmaps, and real-time internship/hackathon recommendations – all while monitoring mental well-being and keeping the journey engaging.
 
