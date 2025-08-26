@@ -43,9 +43,9 @@ Includes mini-projects, quizzes, and coding challenges to make learning interact
 7.GREWT – AI Career & Mental Health Chatbot 🤖
 Provides real-time guidance on career decisions, answers learning-related queries, and offers support for mental health and stress management to help students stay motivated and balanced.
 
- 8.Progress & Rewards🏆– Unlock achievements as you grow.
+ 8.Progress & Rewards🏆 Unlock achievements as you grow.
 
- 9.Analytics Dashboard📊 – Visual progress tracking for motivation.
+ 9.Analytics Dashboard📊  Visual progress tracking for motivation.
  
  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
