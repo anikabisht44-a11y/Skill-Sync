@@ -93,7 +93,7 @@ skill-sync/
 
  👥 **Made my team Mind Mavericks**
 
-Anika Bisht – Baackend Development
+Anika Bisht – Backend Development
 
 Sanjana Gupta- UI/UX Design
 
